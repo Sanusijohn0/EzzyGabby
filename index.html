@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P H O T O G R A P H Y</title>
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="CSS/index.css" />
+    <!-- CSS LIBRARIES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="nav fixed">
+        <h1><i class="bi bi-camera"></i>EzzyGabby</h1>
+        <ul id="menuList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#review">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="bi bi-list" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+      <section class="hero" id="home">
+        <div class="hero__one">
+          <p data-aos="slide-down" data-aos-duration="1000">
+            TAKE THE PERFECT PICTURES
+          </p>
+          <h1 data-aos="slide-up" data-aos-duration="1000">
+            DISCOVER YOUR INNER BEAUTY
+          </h1>
+          <span data-aos="slide-left" data-aos-duration="1000">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+            distinctio dolores magnam quos ad id perspiciatis omnis, dolore
+            animi deserunt!
+          </span>
+          <a
+            href="#contact"
+            class="link"
+            data-aos="slide-right"
+            data-aos-duration="1000"
+            >Contact Me <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+        <div class="hero__two" id="img-container">
+          <img src="img/blog-1.jpg" alt="" class="img-one" id="img-one" />
+          <img src="img/blog-2.jpg" alt="" class="img-two" id="img-two" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about__one" data-aos="fade-left" dsata-aos-duration="1000">
+          <img src="img/about.jpg" alt="" />
+        </div>
+        <div class="about__two">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            eveniet tenetur labore tempore suscipit assumenda rem iste mollitia
+            voluptates, ad blanditiis saepe quidem, dolorum est impedit optio
+            excepturi facere voluptate obcaecati. Qui, eius! Provident odio eum
+            eos sunt nemo, iusto itaque alias illum saepe cupiditate earum
+            pariatur quisquam ratione voluptate?
+          </span>
+          <a href="#" class="link"
+            >Read More <i class="bi bi-chevron-right"></i
+          ></a>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="gallery__one">
+          <h2>Gallery</h2>
+        </div>
+        <div class="gallery__two">
+          <img
+            src="img/portfolio/portfolio-1.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+
+          <img
+            src="img/portfolio/portfolio-2.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="img/portfolio/portfolio-3.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="img/portfolio/portfolio-4.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          />
+          <img
+            src="img/portfolio/portfolio-5.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          />
+          <img
+            src="img/portfolio/portfolio-6.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          />
+          <img
+            src="img/portfolio/portfolio-7.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          />
+          <img
+            src="img/portfolio/portfolio-8.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          />
+          <img
+            src="img/portfolio/portfolio-9.jpg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          />
+        </div>
+      </section>
+      <section class="review-faq" id="review">
+        <article class="review">
+          <div>
+            <h2>What Our Clients Say</h2>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
+                <img src="img/review-5.png" alt="" />
+                <h2>John Doe</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/review-1.png" alt="" />
+                <h2>Allie sam</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/review-6.png" alt="" />
+                <h2>jamie palmer</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+              <div class="swiper-slide slide">
+                <img src="img/review-2.png" alt="" />
+                <h2>Ellen Dera</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+
+              <div class="swiper-slide slide">
+                <img src="img/review-4.png" alt="" />
+                <h2>Daniel Randy</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+
+              <div class="swiper-slide slide">
+                <img src="img/review-3.png" alt="" />
+                <h2>Sarah Samuel</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+
+              <div class="swiper-slide slide">
+                <img src="img/review-7.png" alt="" />
+                <h2>Andre David</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+
+              <div class="swiper-slide slide">
+                <img src="img/review-8.png" alt="" />
+                <h2>Elizabeth Deborah</h2>
+                <span
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i
+                ></span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
+                  dolorum voluptas? Alias!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </article>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact__one">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39700.04727750287!2d-0.0544600212439268!3d51.54526046510518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a78bf2ab9b87%3A0xbd69d3e95620fb8a!2sStratford%2C%20London%2C%20UK!5e0!3m2!1sen!2sng!4v1735696797591!5m2!1sen!2sng"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact__two">
+          <div class="one">
+            <span
+              ><i class="bi bi-envelope"></i>
+              <a href="mailto:info@photo.com">info@photo.com</a></span
+            >
+            <span
+              ><i class="bi bi-telephone"></i>
+              <a href="tel:+447 49506859">(+447) 49506859</a></span
+            >
+            <span
+              ><i class="bi bi-whatsapp"></i>
+              <a href="message:+447 49506859">(+447) 11045893</a></span
+            >
+            <div class="icons-container">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-tiktok"></i>
+            </div>
+          </div>
+          <div class="two">
+            <form method="post">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="link">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__one">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+      </div>
+      <div class="footer__two">
+        <p>CopyRight &copy; <span> EzzyGabby</span>, All rights reserved</p>
+        <p>Designed By <span>Krill Designs</span></p>
+      </div>
+    </footer>
+    <!-- MAIN JS FILE -->
+    <script src="JS/index.js"></script>
+    <!-- JS LIBRARIES -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        draggable: true,
+        touchMove: true,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
