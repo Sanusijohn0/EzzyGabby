@@ -471,7 +471,7 @@ footer .footer__two p span:hover {
   }
 
   nav ul {
-    position: absolute;
+    position: fixed;
     top: 47px;
     right: 0;
     left: 0;
@@ -539,7 +539,7 @@ footer .footer__two p span:hover {
   }
 
   #contact .contact__two .one span i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #contact .contact__two .one span a {
     font-size: 1.2rem;
@@ -555,10 +555,10 @@ footer .footer__two p span:hover {
   }
 
   .hero .hero__one h1 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .hero .hero__one h1 i {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .about .about__one img {
     width: 100%;
