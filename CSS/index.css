@@ -551,15 +551,12 @@ footer .footer__two p span:hover {
   header nav {
     padding: 0 10px;
   }
-  nav h1 {
+
+  header nav h1 {
     font-size: 1rem;
   }
-
-  .hero .hero__one h1 {
-    font-size: 0.7rem;
-  }
-  .hero .hero__one h1 i {
-    font-size: 0.7rem;
+  header nav h1 i {
+    font-size: 1rem;
   }
   .about .about__one img {
     width: 100%;
