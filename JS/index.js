@@ -8,3 +8,10 @@ function toggleMenu() {
     menuList.style.maxHeight = "0px";
   }
 }
+
+const hiddenText = document.getElementById("hidden");
+const hiddenButton = document.getElementById("hidden-button");
+
+hiddenButton.addEventListener("click", () => {
+  hiddenText.classList.toggle("hidden");
+});
