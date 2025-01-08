@@ -180,7 +180,7 @@ header .hero .hero__two img.img-one {
 header .hero .hero__two img.img-two {
   position: absolute;
   top: 15%;
-  right: 5%;
+  right: 0;
 }
 
 /* about section */
@@ -251,6 +251,7 @@ header .hero .hero__two img.img-two {
 }
 .gallery .gallery__two img {
   width: 30%;
+  height: 400px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   max-width: 100%;
