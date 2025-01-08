@@ -93,6 +93,7 @@ header nav h1 {
   color: var(--bg-green);
   font-weight: bolder;
   margin-right: auto;
+  font-family: cursive;
 }
 
 header nav h1 i {
