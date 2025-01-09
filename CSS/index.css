@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins" sans-serif;
-  overflow-x: hidden;
 }
 
 html {
@@ -474,7 +473,7 @@ footer .footer__two p span:hover {
   header nav {
     align-items: baseline;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
   }
 
   nav ul {
