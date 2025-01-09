@@ -477,8 +477,8 @@ footer .footer__two p span:hover {
   }
 
   nav ul {
-    position: fixed;
-    top: 47px;
+    position: absolute;
+    top: 40px;
     right: 0;
     left: 0;
     flex-direction: column;
