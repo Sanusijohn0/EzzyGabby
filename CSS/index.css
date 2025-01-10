@@ -25,6 +25,9 @@ html {
   --breakpoint-xl: 1200px;
 }
 
+body {
+  overflow-y: hidden;
+}
 /* UTILITIES */
 .swiper {
   width: 80vw;
@@ -74,7 +77,7 @@ html {
 
 /* HEADER STYLES */
 header {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 header nav {
   display: flex;
@@ -473,7 +476,7 @@ footer .footer__two p span:hover {
   header nav {
     align-items: baseline;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
   }
 
   nav ul {
@@ -562,6 +565,12 @@ footer .footer__two p span:hover {
   }
   header nav h1 i {
     font-size: 2rem;
+  }
+  header .hero .hero__one p {
+    font-size: 1.1rem;
+  }
+  header .hero .hero__one h1 {
+    font-size: 2.5rem;
   }
   header .hero .hero__two {
     margin-top: 1rem;
