@@ -105,7 +105,7 @@ a {
 .hamburger {
   display: none;
 }
-
+/* Hero Styles */
 header .hero {
   display: flex;
   justify-content: space-between;
@@ -482,7 +482,7 @@ footer .footer__two p span:hover {
     align-items: center;
     top: 20px;
     right: 10px;
-    background-color: var(--light);
+    background-color: var(--dark);
     color: var(--bg-green);
     font-size: 2rem;
     width: 50px;
@@ -546,6 +546,9 @@ footer .footer__two p span:hover {
 }
 
 @media (max-width: 576px) {
+  header .hero {
+    margin-top: 0.5rem;
+  }
   header .hero .hero__one p {
     font-size: 1.1rem;
   }
