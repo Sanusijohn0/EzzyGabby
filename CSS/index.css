@@ -13,7 +13,7 @@ html {
   scroll-padding-top: 60px;
   overflow-x: hidden;
 }
-n :root {
+:root {
   --bg-green: #7dc576;
   --bg-gray: rgb(255, 255, 255);
   --light: #f8f9fa;
