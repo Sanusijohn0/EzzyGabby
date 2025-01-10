@@ -1,11 +1,6 @@
-const icon = document.getElementById("navbar-toggler");
-const close = document.querySelector("#close");
-const nav2 = document.querySelector(".nav-2");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
-icon.addEventListener("click", () => {
-  nav2.style.display = "flex";
-});
-
-close.addEventListener("click", () => {
-  nav2.style.display = "none";
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });
