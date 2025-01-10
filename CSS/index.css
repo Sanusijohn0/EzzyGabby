@@ -220,6 +220,7 @@ header .hero .hero__two img.img-two {
 
 .about .about__two h2 {
   font-size: 3rem;
+  font-family: cursive;
   letter-spacing: 2px;
   margin-bottom: 2rem;
 }
@@ -597,6 +598,7 @@ footer .footer__two p span:hover {
 
   #review h2 {
     font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
 
   #contact .contact__two .two form input#name,
