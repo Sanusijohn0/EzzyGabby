@@ -461,10 +461,11 @@ footer .footer__two p span:hover {
     width: 100%;
     background-color: var(--dark);
     flex-direction: column;
-    display: none;
+    transform: translate(100%);
     transition: 0.3s ease-in;
     z-index: 9999;
     padding-left: 40px;
+    overflow-x: hidden;
   }
 
   .nav-links li {
@@ -476,7 +477,7 @@ footer .footer__two p span:hover {
   }
 
   .nav-links.active {
-    display: flex;
+    transform: translate(0px);
   }
   header .hero {
     flex-direction: column;
