@@ -1,17 +1,11 @@
-const menuList = document.getElementById("menuList");
-menuList.style.maxHeight = "0px";
+const icon = document.getElementById("navbar-toggler");
+const close = document.querySelector("#close");
+const nav2 = document.querySelector(".nav-2");
 
-function toggleMenu() {
-  if (menuList.style.maxHeight == "0px") {
-    menuList.style.maxHeight = "300px";
-  } else {
-    menuList.style.maxHeight = "0px";
-  }
-}
+icon.addEventListener("click", () => {
+  nav2.style.display = "flex";
+});
 
-const hiddenText = document.getElementById("hidden");
-const hiddenButton = document.getElementById("hidden-button");
-
-hiddenButton.addEventListener("click", () => {
-  hiddenText.classList.toggle("hidden");
+close.addEventListener("click", () => {
+  nav2.style.display = "none";
 });

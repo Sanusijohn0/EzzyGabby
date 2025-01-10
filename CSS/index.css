@@ -24,11 +24,9 @@ html {
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
 }
-
-header {
+body {
   overflow-x: hidden;
 }
-
 a {
   text-decoration: none;
 }
@@ -80,60 +78,117 @@ a {
 }
 
 /* HEADER STYLES */
-header {
-  margin-bottom: 5rem;
-}
+
 header nav {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-between;
   padding: 10px 50px;
-  background-color: var(--dark);
+  align-items: baseline;
+  background: var(--dark);
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 9999;
-  margin-bottom: 4rem;
+  z-index: 99999;
 }
 
 header nav h1 {
-  font-size: 2rem;
-  color: var(--bg-green);
-  font-weight: bolder;
-  margin-right: auto;
-}
-
-header nav h1 i {
   font-size: 2.5rem;
+  color: var(--bg-green);
 }
 
-header nav ul {
+header nav .nav-1 {
   display: flex;
+  border-radius: 10px;
+  padding: 5px;
+  transition: max-height 0.3s ease;
+  max-height: 200px;
+  overflow: hidden;
 }
 
-header nav ul li {
+header nav .nav-1 li {
   list-style: none;
   margin-right: 15px;
 }
 
-header ul li a {
+header nav .nav-1 li a {
   text-decoration: none;
+  font-size: 1.2rem;
   color: var(--light);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+  transition: 0.2s ease-in-out;
+  box-sizing: content-box;
+  padding-bottom: 3px;
+}
+
+header nav .nav-1 li a:hover {
+  border-bottom: 1px solid var(--bg-green);
+}
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+#navbar-toggler {
+  color: var(--light);
+  font-size: 2rem;
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+  margin-bottom: 4rem;
+}
+
+header .nav-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  background-color: #fff;
+  box-shadow: -2px 0 2px #333;
+  padding: 40px 25px;
+  display: none;
+}
+
+header .nav-2 li {
+  list-style: none;
+}
+
+header .nav-2 li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+  padding-bottom: 5px;
+  box-sizing: content-box;
   transition: 0.2s ease-in-out;
 }
 
-header ul li a:hover {
-  opacity: 0.8;
+header .nav-2 li a:hover {
+  border-bottom: 1px solid var(--bg-green);
 }
 
-.menu-icon {
-  display: none;
+header .nav-2 .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
-.menu-icon i {
-  font-size: 2rem;
-  color: #fff;
+
+header .nav-2 .close:hover {
+  transform: rotate(180deg);
 }
 
 header .hero {
@@ -142,6 +197,7 @@ header .hero {
   gap: 1rem;
   padding: 40px;
   margin-top: 3rem;
+  overflow-x: hidden;
 }
 
 header .hero .hero__one {
@@ -191,12 +247,6 @@ header .hero .hero__two img {
   100% {
     transform: scale(1);
   }
-}
-
-header .hero .hero__two img.img-two {
-  position: absolute;
-  top: 15%;
-  right: 0;
 }
 
 /* about section */
@@ -478,34 +528,6 @@ footer .footer__two p span:hover {
 }
 
 @media (max-width: 884px) {
-  header nav {
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100vw;
-  }
-
-  nav ul {
-    position: absolute;
-    top: 37px;
-    right: 0;
-    left: 0;
-    flex-direction: column;
-    padding-left: 40px;
-    background-color: var(--dark);
-    gap: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  nav ul li {
-    padding: 20px;
-  }
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-  .menu-icon i {
-    font-size: 2rem;
-  }
   header .hero {
     flex-direction: column;
   }
@@ -562,14 +584,18 @@ footer .footer__two p span:hover {
 
 @media (max-width: 576px) {
   header nav {
-    padding: 0 10px;
+    padding: 5px 20px;
   }
-
   header nav h1 {
     font-size: 2rem;
   }
-  header nav h1 i {
-    font-size: 2rem;
+  #navbar-toggler {
+    display: flex;
+    font-size: 2.5rem;
+  }
+
+  header nav .nav-1 {
+    display: none;
   }
   header .hero .hero__one p {
     font-size: 1.1rem;
@@ -598,6 +624,7 @@ footer .footer__two p span:hover {
 
   #gallery img {
     width: 100%;
+    height: 400px;
   }
 
   #review h2 {
