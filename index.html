@@ -31,10 +31,13 @@
       <nav class="navbar none">
         <div class="logo"><i class="bi bi-camera"></i>EzzyGabby</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
           <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#review">Reviews</a></li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -167,7 +170,12 @@
             data-aos-delay="600"
           />
         </div>
-        <div class="gallery__two">
+        <div
+          class="gallery__two hidden"
+          id="loadout"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <img
             src="img/img-14.jpg"
             alt=""
@@ -245,134 +253,9 @@
             data-aos-delay="600"
           />
         </div>
-      </section>
-      <section class="review-faq" id="review">
-        <article class="review">
-          <div>
-            <h2>What Our Clients Say</h2>
-          </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide">
-                <img src="img/review-5.png" alt="" />
-                <h2>John Doe</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-              <div class="swiper-slide slide">
-                <img src="img/review-1.png" alt="" />
-                <h2>Allie sam</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-              <div class="swiper-slide slide">
-                <img src="img/review-6.png" alt="" />
-                <h2>jamie palmer</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-              <div class="swiper-slide slide">
-                <img src="img/review-2.png" alt="" />
-                <h2>Ellen Dera</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-
-              <div class="swiper-slide slide">
-                <img src="img/review-4.png" alt="" />
-                <h2>Daniel Randy</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-
-              <div class="swiper-slide slide">
-                <img src="img/review-3.png" alt="" />
-                <h2>Sarah Samuel</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-
-              <div class="swiper-slide slide">
-                <img src="img/review-7.png" alt="" />
-                <h2>Andre David</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-
-              <div class="swiper-slide slide">
-                <img src="img/review-8.png" alt="" />
-                <h2>Elizabeth Deborah</h2>
-                <span
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i
-                ></span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium tenetur nam ad eaque quia deleniti sint, labore
-                  dolorum voluptas? Alias!
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </article>
+        <a class="link" id="loadout-btn"
+          >See More <i class="bi bi-chevron-right"></i
+        ></a>
       </section>
       <section id="contact">
         <h2>Contact Us</h2>

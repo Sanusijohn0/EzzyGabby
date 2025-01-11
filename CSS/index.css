@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
   overflow-x: hidden;
+  scrollbar-width: 0;
 }
 :root {
   --bg-green: #7dc576;
@@ -26,6 +27,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  overflow-y: auto;
 }
 a {
   text-decoration: none;
@@ -70,7 +72,7 @@ a {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   background-color: var(--dark);
   padding: 1rem;
   z-index: 999;
@@ -227,6 +229,11 @@ header .hero .hero__two img {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.gallery .gallery__two.hidden {
+  display: none;
+  margin-top: 2rem;
 }
 .gallery .gallery__two img {
   width: 30%;
